@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-panel</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="img/png" href="images/logo.png">
+    <link rel="stylesheet" href="bootstrap library/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler mb-2 bg-light " data-toggle="collapse" data-target="#mynav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="mynav">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- sidebar  -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top ">
+                        <a href=""
+                            class="navbar-brand border-bottom text-white text-center mb-3 mx-auto d-block">Admin-pannel</a>
+                        <div class="border-bottom">
+                            <img src="/images/Erwin.jpg" alt="" class="rounded-circle " style="height: 70px ;">
+                            <a class="text-white mx-3 navbar-brand " href=""> Erwin rommel </a>
+                        </div>
+                        <ul class="nav-bar list-unstyled flex-column mt-4 ps-0 pe-0 align-items-center justify-content-center"
+                            style="font-size: 1.1em;">
+                            <li class="nav-link slidebar-link text-white current">
+                                <a class="text-decoration-none text-white" href=""><i
+                                        class="fas fa-home fa-lg p-3 ms-2"></i>
+                                    home</a>
+                            </li>
+                            <li class="nav-link slidebar-link ">
+                                <a class="text-decoration-none text-white" href=""><i
+                                        class="fas fa-user fa-lg p-3 ms-2"></i>
+                                    profile</a>
+                            </li>
+                            <li class="nav-link slidebar-link ">
+                                <a class="text-decoration-none text-white" href=""><i
+                                        class="fas fa-envelope fa-lg p-3 ms-2"></i>
+                                    massages</a>
+                            </li>
+                            <li class="nav-link slidebar-link ">
+                                <a class="text-decoration-none text-white" href=""><i
+                                        class="fas fa-shopping-cart fa-lg p-3 ms-2"></i>
+                                    sell</a>
+                            </li>
+                            <li class="nav-link slidebar-link ">
+                                <a class="text-decoration-none text-white" href=""><i
+                                        class="fas fa-chart-line fa-lg p-3 ms-2"></i>
+                                    analysis</a>
+                            </li>
+                            <li class="nav-link slidebar-link ">
+                                <a class="text-decoration-none text-white" href=""><i
+                                        class="fas fa-chart-bar fa-lg p-3 ms-2"></i>
+                                    graphs</a>
+                            </li>
+                            <li class="nav-link slidebar-link ">
+                                <a class="text-decoration-none text-white" href=""><i
+                                        class="fas fa-table fa-lg p-3 ms-2"></i>
+                                    tables</a>
+                            </li>
+                            <li class="nav-link slidebar-link ">
+                                <a class="text-decoration-none text-white" href=""><i
+                                        class="fas fa-wrench fa-lg p-3 ms-2"></i>
+                                    setting</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- End of sidebar  -->
+                    <!-- topnav  -->
+                    <div class="col-xl-10 col-lg-9 col-md-8 bg-dark me-auto fixed-top py-2 top-navbar">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <h4 class="text-light">dashboard</h4>
+                            </div>
+                            <div class="col-md-5 ps-5 pe-0 mt-0">
+                                <form class="my-3 my-md-0">
+                                    <div class="input-group mt-1">
+                                        <input type="text" placeholder="search..."
+                                            class="form-control search-input text-warning ">
+                                        <button class="btn btn-white search-button mx-1" type="submit">
+                                            <i class="fa-solid fa-search text-danger"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="navbar-nav justify-content-between">
+                                    <li class="navitem mx-1 slidebar-link p-1 ">
+                                        <a href="" class="navlink"><i class="fas fa-comments fa-lg text-muted"></i></a>
+                                    </li>
+                                    <li class="navitem mx-1 slidebar-link p-1">
+                                        <a href="" class="navlink"><i class="fas fa-bell fa-lg text-muted"></i></a>
+                                    </li>
+                                    <li class="navitem mx-1 slidebar-link p-1 me-md-auto">
+                                        <a href="#logoutModal" data-toggle="modal" class="navlink"><i
+                                                class="fas fa-sign-out-alt fa-lg text-danger"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of topnav  -->
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- End of Navigation  -->
+    <!-- modal-->
+    <div class="modal fade" id="logoutModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>?do you want to leave</h4>
+                </div>
+                <div class="modal-body">
+                    <h5 class="text-black"> if you logout you should sign in again</h5>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-dismiss="modal">i will stay</button>
+                    <button class="btn btn-danger"> i wont stay</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- endmodal -->
+    <!-- card -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 me-auto">
+                    <div class="row pt-md-5 mt-md-2 mb-5">
+
+                        <div class="col-lg-3 col-md-6 p-2">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="text-secondary">
+                                            <h5>sell</h5>
+                                            <h5 class="mt-4">3000$</h5>
+                                        </div>
+                                        <i class="fas fa-shopping-cart text-warning fa-3x"></i>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-secondary text-left ">
+                                    <i class="fas fa-sync ml-3"></i>
+                                    <span>refresh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 p-2">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="text-secondary">
+                                            <h5>cost</h5>
+                                            <h5 class="mt-4">14400$</h5>
+                                        </div>
+                                        <i class="fas fa-money-bill-alt text-success fa-3x"></i>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-secondary text-left ">
+                                    <i class="fas fa-sync ml-3"></i>
+                                    <span>refresh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 p-2">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="text-secondary">
+                                            <h5>customers</h5>
+                                            <h5 class="mt-4">55312</h5>
+                                        </div>
+                                        <i class="fas fa-users text-primary fa-3x"></i>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-secondary text-left ">
+                                    <i class="fas fa-sync ml-3"></i>
+                                    <span>refresh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 p-2">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="text-secondary">
+                                            <h5>visit</h5>
+                                            <h5 class="mt-4">102000</h5>
+                                        </div>
+                                        <i class="fas fa-chart-line text-danger fa-3x"></i>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-secondary text-left ">
+                                    <i class="fas fa-sync ml-3"></i>
+                                    <span>refresh</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- endcard -->
+    <!-- progress -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 me-auto">
+                    <div class="row">
+                        <!-- progress  -->
+                        <div class="col-lg-6">
+                            <div class="bg-dark text-white p-4 rounded">
+                                <h4 class="mb-4">progress</h4>
+                                <!-- project  -->
+                                <h6 class="mb-2 mt-4">online library</h6>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar progress-bar-striped font-weight-bold bg-danger"
+                                        style="width: 85%;">85%</div>
+                                </div>
+                                <!-- end of project  -->
+                                <!-- project  -->
+                                <h6 class="mb-2 mt-4">application</h6>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar progress-bar-striped font-weight-bold bg-primary"
+                                        style="width: 23%;">23%</div>
+                                </div>
+                                <!-- end of project  -->
+                                <!-- project  -->
+                                <h6 class="mb-2 mt-4">web-service</h6>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar progress-bar-striped font-weight-bold bg-success"
+                                        style="width: 55%;">55%</div>
+                                </div>
+                                <!-- end of project  -->
+                            </div>
+                        </div>
+                        <!-- end of progress  -->
+                        <!-- tasklist  -->
+                        <div class="col-lg-6">
+                            <h4 class="text-muted p-3 mb-3">tasks</h4>
+                            <!-- task  -->
+                            <div class="container-fluid bg-white">
+                                <div class="row py-3 mb-4 align-content-center task-border">
+                                    <div class="col-1">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="col-9">ready for back-end</div>
+                                    <div class="col-1">
+                                        <a data-toggle="tooltip" data-html="true" data-placement="top"
+                                            title="<h6>edit</h6>" href="">
+                                            <i class="fas fa-edit fa-lg text-success ml-2"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a data-toggle="tooltip" data-html="true" data-placement="top"
+                                            title="<h6>delete</h6>" href="">
+                                            <i class="fas fa-trash fa-lg text-danger ml-2"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                            </div>
+                            <!-- end of task  -->
+                            <!-- task  -->
+                            <div class="container-fluid bg-white">
+                                <div class="row py-3 mb-4 align-content-center task-border">
+                                    <div class="col-1">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="col-9">آماده کردن سمت بک اند</div>
+                                    <div class="col-1">
+                                        <a data-toggle="tooltip" data-html="true" data-placement="top"
+                                            title="<h6>edit</h6>" href="">
+                                            <i class="fas fa-edit fa-lg text-success ml-2"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a data-toggle="tooltip" data-html="true" data-placement="top"
+                                            title="<h6>delete</h6>" href="">
+                                            <i class="fas fa-trash fa-lg text-danger ml-2"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                            </div>
+                            <!-- end of task  -->
+                            <!-- task  -->
+                            <div class="container-fluid bg-white">
+                                <div class="row py-3 mb-4 align-content-center task-border">
+                                    <div class="col-1">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="col-9">آماده کردن سمت بک اند</div>
+                                    <div class="col-1">
+                                        <a data-toggle="tooltip" data-html="true" data-placement="top"
+                                            title="<h6>edit</h6>" href="">
+                                            <i class="fas fa-edit fa-lg text-success ml-2"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a data-toggle="tooltip" data-html="true" data-placement="top"
+                                            title="<h6>delete</h6>" href="">
+                                            <i class="fas fa-trash fa-lg text-danger ml-2"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                            </div>
+                            <!-- end of task  -->
+                        </div>
+                        <!-- end of tasklist  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of progress -->
+    <!-- table -->
+    <section>
+        div.con
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-xl-10 col-lg-9 col-md-8 me-auto">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3 class="text-muted text-center">payments</h3>
+                            <table class="table table-dark table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>name</th>
+                                        <th>amount</th>
+                                        <th>date</th>
+                                        <th>situ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Erwin</td>
+                                        <td>5000$</td>
+                                        <td>17 jan</td>
+                                        <td><span class="badge w-75 py-2 bg-success">done</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Erwin</td>
+                                        <td>5000$</td>
+                                        <td>17 jan</td>
+                                        <td><span class="badge w-75 bg-warning py-2">waiting</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Erwin</td>
+                                        <td>5000$</td>
+                                        <td>17 jan</td>
+                                        <td><span class="badge w-75 bg-danger py-2">declined</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Erwin</td>
+                                        <td>5000$</td>
+                                        <td>17 jan</td>
+                                        <td><span class="badge w-75 bg-success py-2">done</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- pagination -->
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item active">
+                                    <a href="" class="page-link px-3 py-2 ">1</a>
+                                </li>
+                                <li class="page-item ">
+                                    <a href="" class="page-link px-3 py-2">2</a>
+                                </li>
+                                <li class="page-item ">
+                                    <a href="" class="page-link px-3 py-2">3</a>
+                                </li>
+                                <li class="page-item ">
+                                    <a href="" class="page-link px-3 py-2">4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="text-muted text-center">delivery</h3>
+                            <table class="table table-dark table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>name</th>
+                                        <th>amount</th>
+                                        <th>date</th>
+                                        <th>situ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Erwin</td>
+                                        <td>5000$</td>
+                                        <td>17 jan</td>
+                                        <td><span class="badge w-75 py-2 bg-danger">declined</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Erwin</td>
+                                        <td>5000$</td>
+                                        <td>17 jan</td>
+                                        <td><span class="badge w-75 bg-success py-2">done</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Erwin</td>
+                                        <td>5000$</td>
+                                        <td>17 jan</td>
+                                        <td><span class="badge w-75 bg-danger py-2">declined</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Erwin</td>
+                                        <td>5000$</td>
+                                        <td>17 jan</td>
+                                        <td><span class="badge w-75 bg-warning py-2">waiting</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- pagination -->
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item active">
+                                    <a href="" class="page-link px-3 py-2 ">1</a>
+                                </li>
+                                <li class="page-item ">
+                                    <a href="" class="page-link px-3 py-2">2</a>
+                                </li>
+                                <li class="page-item ">
+                                    <a href="" class="page-link px-3 py-2">3</a>
+                                </li>
+                                <li class="page-item ">
+                                    <a href="" class="page-link px-3 py-2">4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="bg-secondary p-1">
+        <div class="container-fluid ">
+            <div class="row mb-3 mt-3">
+                <div class="col-xl-10 col-lg-9 col-md-8 me-auto ">
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <p class="text-white me-auto mt-0" style="font-size: 1.4em;">Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Nisi
+                                tempore laborum iste ipsa reiciendis. Aliquid dolor, saepe enim neque sequi modi
+                                amet quidem debitis itaque provident in? Id, earum repudiandae.</p>
+                            <div class="comers">
+                                <div class="massage mt-3">
+                                    <h4 class="text-warning ">support us here</h4>
+                                </div>
+                                <div class="icons mt-4 ">
+                                    <a href=""><i class="fab fa-facebook text-primary mx-3"
+                                            style="font-size: 2.4em"></i></a>
+                                    <a href=""><i class="fab fa-whatsapp text-success mx-3"
+                                            style="font-size: 2.4em"></i></a>
+                                    <a href=""><i class="fab fa-youtube text-danger mx-3"
+                                            style="font-size: 2.4em"></i></a>
+                                </div>
+                                <div class="last-speak">
+                                    <h3 class="mt-4 text-">! Copyright reserved</h3>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6 ">
+                            <img class="img-fluid" src="images/123.jpg" alt="">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </footer>
+    <!-- end of table  -->
+    </script>
+    <script src="bootstrap library/js/jquery-3.7.1.slim.min.js"></script>
+    <script src="bootstrap library/js/popper.min.js"></script>
+    <script src="bootstrap library/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/1f808e2f12.js" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>
